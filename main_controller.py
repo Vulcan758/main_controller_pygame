@@ -4,7 +4,7 @@ from time import sleep
 pygame.init()
 
 window = pygame.display.set_mode((500, 500))
-pygame.display.set_caption("rover controller")
+pygame.display.set_caption("controller")
 
 up = 119
 down = 115

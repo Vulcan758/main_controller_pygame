@@ -5,7 +5,7 @@ from pygame.locals import *
 pygame.init()
 
 window = pygame.display.set_mode((500, 500))
-pygame.display.set_caption("rover controller")
+pygame.display.set_caption("gamepad controller")
 
 pygame.joystick.init()
 joysticks = [pygame.joystick.Joystick(i) for i in range(pygame.joystick.get_count())]
@@ -51,8 +51,3 @@ def controller(up, down, right, left):
         sleep(0.1)
 if __name__ == "__main__":
     controller(up, down, right, left)
-
-#w --> 119
-#a --> 97
-#s --> 115
-#d --> 100
